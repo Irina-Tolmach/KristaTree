@@ -76,6 +76,7 @@ public class TestNode {
     void Test6FindNodeByName(){
         Node node1 = new Node("father");
         Node node2 = new Node("son");
+        node1.addSon(node2);
         assertEquals(node1.find(node2.getName()), node2);
     }
 
